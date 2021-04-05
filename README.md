@@ -20,7 +20,7 @@ Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolv
 
 ### Exemplo de requisição
 
-<blockquote>Endpoint</blockquote>
+<blockquote>API</blockquote>
 <pre>
   <code>
     - Production POST https://itipasswordapi.herokuapp.com/password
