@@ -30,7 +30,7 @@ public class PasswordService {
 		list.add(new RegexPattern("^.*(?=.*[0-9]).*$", "A senha deve possuir ao menos um número."));
 		list.add(new RegexPattern("^.*(?=.*[a-z]).*$", "A senha deve possuir ao menos uma letra minúscula."));
 		list.add(new RegexPattern("^.*(?=.*[A-Z]).*$", "A senha deve possuir ao menos uma letra maiúscula."));
-		list.add(new RegexPattern("^(?:([\w])(?!.*\1))*$", "A senha não deve possuir caracteres repetidos."));
+		list.add(new RegexPattern("^(?:([\\w])(?!.*\1))*$", "A senha não deve possuir caracteres repetidos."));
 		list.add(new RegexPattern("^.*(?=.*[!@#$%-^&+*()]).*$", "A senha deve possuir ao menos um caractere especial."));
 		
 		return list;
