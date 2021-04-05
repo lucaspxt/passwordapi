@@ -2,9 +2,6 @@ package com.lucaspxt.password.dto;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
-
 import com.lucaspxt.password.domain.Password;
 import com.lucaspxt.password.services.validation.PasswordVerify;
 
