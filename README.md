@@ -18,10 +18,21 @@ Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolv
 * O código fonte está disponível em https://github.com/lucaspxt/passwordapi
 * A API foi disponibilizada na cloud do Heroku https://itipasswordapi.herokuapp.com/
 
-### Endpoint
+### Exemplo de requisição
+
+<blockquote>Endpoint</blockquote>
 <pre>
   <code>
     - Production POST https://itipasswordapi.herokuapp.com/password
     - Local POST http://localhost:8000/password
+  </code>
+</pre>
+
+<blockquote>Body</blockquote>
+<pre>
+  <code>
+    {
+      "password": "senha desejada"
+    }
   </code>
 </pre>
