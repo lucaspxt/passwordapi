@@ -25,14 +25,13 @@ public class PasswordService {
 	}
 	
 	public List<RegexPattern> getRegexList() {
-		String specialCharacters = "!@#$%-^&+*()";
 		List<RegexPattern> list = new ArrayList<>();
 		list.add(new RegexPattern("^.*(?=.{9,}).*$", "A senha deve possuir no mínimo 9 digitos."));
 		list.add(new RegexPattern("^.*(?=.*[0-9]).*$", "A senha deve possuir ao menos um número."));
 		list.add(new RegexPattern("^.*(?=.*[a-z]).*$", "A senha deve possuir ao menos uma letra minúscula."));
 		list.add(new RegexPattern("^.*(?=.*[A-Z]).*$", "A senha deve possuir ao menos uma letra maiúscula."));
-		list.add(new RegexPattern("^(?:([0-9a-zA-Z"+specialCharacters+"])(?!.*\1))*$", "A senha não deve possuir caracteres repetidos."));
-		list.add(new RegexPattern("^.*(?=.*["+specialCharacters+"]).*$", "A senha deve possuir ao menos um caractere especial."));
+		list.add(new RegexPattern("^(?:([\w])(?!.*\1))*$", "A senha não deve possuir caracteres repetidos."));
+		list.add(new RegexPattern("^.*(?=.*[!@#$%-^&+*()]).*$", "A senha deve possuir ao menos um caractere especial."));
 		
 		return list;
 	}
