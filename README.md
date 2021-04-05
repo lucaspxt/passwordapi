@@ -5,6 +5,7 @@ Detalhes do desafio: https://github.com/thiagoaos/itau-test
 
 ## Aderencia a especificação
 Para atender ao desafio, foi utilizada a estratégia de validação por meio de expressão regular (RegEx) para cumprir cada critério de validação estabelecido, além disso, foi utilizada a linguagem Java com o Framework Spring como principal stack.
+Além da resposta booleana indicando se a senha é válida ou não, foi adicionado um array com mensagens de erro em caso de senha inválida indicando quais critérios não foram atendidos.
 Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolvimento orientado a testes (TDD) em cada unidade do projeto. O código foi pensado na manutenabilidade e legibilidade através de clean code e aderência aos princípios de SOLID.
 
 ## Tecnologias utilizadas
@@ -23,8 +24,7 @@ Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolv
 <blockquote>API</blockquote>
 <pre>
   <code>
-    - Production POST https://itipasswordapi.herokuapp.com/password
-    - Local POST http://localhost:8000/password
+    - POST https://itipasswordapi.herokuapp.com/password
   </code>
 </pre>
 
@@ -36,3 +36,34 @@ Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolv
     }
   </code>
 </pre>
+
+### Exemplo de resposta
+
+<blockquote>Senha válida</blockquote>
+<pre>
+  <code>
+    {
+      "isValid": true
+    }
+  </code>
+</pre>
+
+<blockquote>Senha inválida</blockquote>
+<pre>
+  <code>
+    {
+      "isValid": false,
+      "errors": [
+        {
+            "fieldName": "password",
+            "msg": "A senha deve possuir no mínimo 9 digitos."
+        },
+        {
+            "fieldName": "password",
+            "msg": "A senha não deve possuir caracteres repetidos."
+        }
+      ]
+    }
+  </code>
+</pre>
+
