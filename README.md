@@ -17,7 +17,7 @@ Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolv
 
 ## Acessos
 * O código fonte está disponível em https://github.com/lucaspxt/passwordapi
-* A API foi disponibilizada na cloud do Heroku https://itipasswordapi.herokuapp.com/
+* A API foi disponibilizada na cloud do Heroku
 
 ### Exemplo de requisição
 
