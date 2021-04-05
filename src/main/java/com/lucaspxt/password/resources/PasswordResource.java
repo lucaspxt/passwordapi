@@ -15,7 +15,7 @@ import com.lucaspxt.password.dto.PasswordResultDTO;
 import com.lucaspxt.password.services.PasswordService;
 
 @RestController
-@RequestMapping(value="/validpassword")
+@RequestMapping(value="/password")
 public class PasswordResource {
 	
 	@Autowired
