@@ -6,7 +6,7 @@ Detalhes do desafio: https://github.com/itidigital/backend-challenge
 ## Aderencia a especificação
 Para atender ao desafio, foi utilizada a estratégia de validação por meio de expressão regular (RegEx) para cumprir cada critério de validação estabelecido, além disso, foi utilizada a linguagem Java com o Framework Spring como principal stack.
 Além da resposta booleana indicando se a senha é válida ou não, foi adicionado um array com mensagens de erro em caso de senha inválida indicando quais critérios não foram atendidos.
-Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolvimento orientado a testes (TDD) em cada unidade do projeto. O código foi pensado na manutenabilidade e legibilidade através de clean code e aderência aos princípios de SOLID.
+Para garantir a qualidade da solução, foi utilizada a estratégia de desenvolvimento orientada a testes (TDD) em cada unidade do projeto. O código foi pensado na manutenabilidade e legibilidade através de clean code e aderência aos princípios de SOLID.
 
 ## Tecnologias utilizadas
 * Stack: Java 8 com Spring 2.4.4
