@@ -1,7 +1,7 @@
 # Password API
 Desafio lançado pelo Iti como parte do processo de seleção para engenheiro(a) software backend.
 
-Detalhes do desafio: https://github.com/thiagoaos/itau-test
+Detalhes do desafio: https://github.com/itidigital/backend-challenge
 
 ## Aderencia a especificação
 Para atender ao desafio, foi utilizada a estratégia de validação por meio de expressão regular (RegEx) para cumprir cada critério de validação estabelecido, além disso, foi utilizada a linguagem Java com o Framework Spring como principal stack.
