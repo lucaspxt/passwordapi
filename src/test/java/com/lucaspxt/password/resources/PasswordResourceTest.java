@@ -38,7 +38,7 @@ public class PasswordResourceTest {
 	public void PasswordTestPostIsValidWithoutListError() throws Exception {
 		Password password = new Password("AbTp9!fok");
 		
-		mockMvc.perform(post("/validpassword")
+		mockMvc.perform(post("/password")
 				.contentType("application/json")
 				.content(objectMapper.writeValueAsString(password)))
 				.andExpect(status().isOk())
@@ -50,7 +50,7 @@ public class PasswordResourceTest {
 	public void PasswordTestPostIsNotValid() throws Exception {
 		Password password = new Password("AbTp9 fok");
 		
-		mockMvc.perform(post("/validpassword")
+		mockMvc.perform(post("/password")
 				.contentType("application/json")
 				.content(objectMapper.writeValueAsString(password)))
 				.andExpect(status().isOk())
@@ -61,7 +61,7 @@ public class PasswordResourceTest {
 	public void PasswordTestPostIsNotValidWithListError() throws Exception {
 		Password password = new Password("AbTp9 fok");
 		
-		mockMvc.perform(post("/validpassword")
+		mockMvc.perform(post("/password")
 				.contentType("application/json")
 				.content(objectMapper.writeValueAsString(password)))
 				.andExpect(status().isOk())
