@@ -24,7 +24,7 @@ Exemplo:
 
 Nota: Espaços em branco não devem ser considerados como caracteres válidos.
 
-# Problema
+## Problema
 Construa uma aplicação que exponha uma api web que valide se uma senha é válida.
 
 Input: Uma senha (string).
