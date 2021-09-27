@@ -9,14 +9,18 @@ Considere como especial os seguintes caracteres: !@#$%^&*()-+
 Não possuir caracteres repetidos dentro do conjunto
 Exemplo:
 
-IsValid("") // false  
-IsValid("aa") // false  
-IsValid("ab") // false  
-IsValid("AAAbbbCc") // false  
-IsValid("AbTp9!foo") // false  
-IsValid("AbTp9!foA") // false<br/>
-IsValid("AbTp9 fok") // false<br/> 
-IsValid("AbTp9!fok") // true<br/> 
+<pre>
+  <code>
+    IsValid("") // false  
+    IsValid("aa") // false  
+    IsValid("ab") // false  
+    IsValid("AAAbbbCc") // false  
+    IsValid("AbTp9!foo") // false  
+    IsValid("AbTp9!foA") // false
+    IsValid("AbTp9 fok") // false 
+    IsValid("AbTp9!fok") // true
+  </code>
+</pre>
 
 Nota: Espaços em branco não devem ser considerados como caracteres válidos.
 
