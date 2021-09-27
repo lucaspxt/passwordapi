@@ -14,9 +14,10 @@ IsValid("aa") // false
 IsValid("ab") // false  
 IsValid("AAAbbbCc") // false  
 IsValid("AbTp9!foo") // false  
-IsValid("AbTp9!foA") // false
-IsValid("AbTp9 fok") // false
-IsValid("AbTp9!fok") // true
+IsValid("AbTp9!foA") // false<br/>
+IsValid("AbTp9 fok") // false<br/> 
+IsValid("AbTp9!fok") // true<br/> 
+
 Nota: Espaços em branco não devem ser considerados como caracteres válidos.
 
 # Problema
